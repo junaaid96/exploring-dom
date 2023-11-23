@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Project DOM - 1</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="amount-container">
+            <div class="deposit amount-box">
+                <div class="amount">
+                    <h1 id="deposit-amount">0</h1>
+                    <p>Deposited</p>
+                </div>
+            </div>
+            <div class="withdraw amount-box">
+                <div class="amount">
+                    <h1 id="withdraw-amount">0</h1>
+                    <p>Withdrawn</p>
+                </div>
+            </div>
+            <div class="total amount-box">
+                <div class="amount">
+                    <h1 id="total-amount">0</h1>
+                    <p>Total</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="deposit-withdraw-container">
+            <div class="deposit-box">
+                <input type="number" id="deposit-value" />
+                <button onclick="deposited(event)" id="deposit-btn">
+                    Deposit
+                </button>
+            </div>
+            <div class="withdraw-box">
+                <input type="number" id="withdraw-value" />
+                <button onclick="withdrawn(event)" id="withdraw-btn">
+                    Withdraw
+                </button>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script src="app.js"></script>
+    </body>
+</html>
